@@ -1,0 +1,10 @@
+Codigo para conectas base de datos con programa: 
+-host = 127.0.0.1
+-database = picnic
+-userId = postgres
+-password = uca
+
+Creando Base de datos en pgAdmin4:
+-El usuario tiene que ser: postgres
+-La contrasena tiene que ser: uca
+-Crear Base de datos: picnic
