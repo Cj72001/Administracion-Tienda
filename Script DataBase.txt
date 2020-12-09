@@ -1,0 +1,22 @@
+CREATE TABLE GANANCIA(
+	idProducto SERIAL PRIMARY KEY,
+	nombre VARCHAR(100),
+	stock_ingresado INT,
+	stock_actual INT,
+	precio_unidad_compra INT,
+	precio_unidad_venta INT,
+	cantidad_vendida INT,
+	precio_compra_acumulado INT,
+	precio_venta_acumulado INT,
+	ganancia INT
+);
+
+CREATE TABLE appuser(
+	idUsuario SERIAL PRIMARY KEY,
+	userName VARCHAR(100),
+	password_ VARCHAR(100)
+);
+
+INSERT INTO appuser (userName, password_)
+VALUES ('Victoria', '123');
+select * from appuser;
