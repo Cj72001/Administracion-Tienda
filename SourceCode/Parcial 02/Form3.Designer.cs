@@ -77,10 +77,10 @@ namespace Parcial_02
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 495);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 611);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 317);
+            this.pictureBox1.Size = new System.Drawing.Size(359, 393);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -94,7 +94,7 @@ namespace Parcial_02
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 493);
+            this.label1.Size = new System.Drawing.Size(359, 609);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario Administrativo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,12 +106,12 @@ namespace Parcial_02
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(355, 2);
+            this.tabControl1.Location = new System.Drawing.Point(368, 2);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tableLayoutPanel1.SetRowSpan(this.tabControl1, 2);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(944, 810);
+            this.tabControl1.Size = new System.Drawing.Size(1175, 1002);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -121,7 +121,7 @@ namespace Parcial_02
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(936, 772);
+            this.tabPage1.Size = new System.Drawing.Size(1167, 964);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Usuarios";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@ namespace Parcial_02
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.04651F));
             this.tableLayoutPanel2.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.95349F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(930, 768);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1161, 960);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // button5
@@ -158,7 +158,7 @@ namespace Parcial_02
             this.button5.Location = new System.Drawing.Point(3, 2);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(480, 80);
+            this.button5.Size = new System.Drawing.Size(601, 102);
             this.button5.TabIndex = 1;
             this.button5.Text = "Agregar Usuario";
             this.button5.UseVisualStyleBackColor = true;
@@ -168,10 +168,10 @@ namespace Parcial_02
             // 
             this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(489, 2);
+            this.button3.Location = new System.Drawing.Point(610, 2);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(438, 80);
+            this.button3.Size = new System.Drawing.Size(548, 102);
             this.button3.TabIndex = 3;
             this.button3.Text = "Eliminar Usuario";
             this.button3.UseVisualStyleBackColor = true;
@@ -182,20 +182,20 @@ namespace Parcial_02
             this.addUser1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel2.SetColumnSpan(this.addUser1, 2);
             this.addUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addUser1.Location = new System.Drawing.Point(3, 88);
+            this.addUser1.Location = new System.Drawing.Point(3, 110);
             this.addUser1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addUser1.Name = "addUser1";
-            this.addUser1.Size = new System.Drawing.Size(924, 676);
+            this.addUser1.Size = new System.Drawing.Size(1155, 846);
             this.addUser1.TabIndex = 4;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(936, 772);
+            this.tabPage2.Size = new System.Drawing.Size(1064, 818);
             this.tabPage2.TabIndex = 2;
             this.tabPage2.Text = "Productos";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -222,7 +222,7 @@ namespace Parcial_02
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.04651F));
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.95349F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(930, 768);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1058, 814);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // button6
@@ -232,7 +232,7 @@ namespace Parcial_02
             this.button6.Location = new System.Drawing.Point(3, 2);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(480, 80);
+            this.button6.Size = new System.Drawing.Size(547, 85);
             this.button6.TabIndex = 1;
             this.button6.Text = "Agregar Producto";
             this.button6.UseVisualStyleBackColor = true;
@@ -242,10 +242,10 @@ namespace Parcial_02
             // 
             this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(489, 2);
+            this.button7.Location = new System.Drawing.Point(556, 2);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(438, 80);
+            this.button7.Size = new System.Drawing.Size(499, 85);
             this.button7.TabIndex = 3;
             this.button7.Text = "Eliminar Producto";
             this.button7.UseVisualStyleBackColor = true;
@@ -256,20 +256,20 @@ namespace Parcial_02
             this.addProduct1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel5.SetColumnSpan(this.addProduct1, 2);
             this.addProduct1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addProduct1.Location = new System.Drawing.Point(3, 88);
+            this.addProduct1.Location = new System.Drawing.Point(3, 93);
             this.addProduct1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addProduct1.Name = "addProduct1";
-            this.addProduct1.Size = new System.Drawing.Size(924, 676);
+            this.addProduct1.Size = new System.Drawing.Size(1052, 717);
             this.addProduct1.TabIndex = 4;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(936, 772);
+            this.tabPage3.Size = new System.Drawing.Size(1064, 818);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Inventario";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -279,9 +279,9 @@ namespace Parcial_02
             this.tableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.82989F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.88119F));
             this.tableLayoutPanel3.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.17011F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.118812F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridView2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.button4, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -292,8 +292,8 @@ namespace Parcial_02
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 751F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(930, 768);
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 806F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1058, 814);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // dataGridView2
@@ -305,7 +305,7 @@ namespace Parcial_02
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(764, 764);
+            this.dataGridView2.Size = new System.Drawing.Size(966, 810);
             this.dataGridView2.TabIndex = 0;
             // 
             // button4
@@ -314,23 +314,23 @@ namespace Parcial_02
             this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button4.Location = new System.Drawing.Point(806, 353);
+            this.button4.Location = new System.Drawing.Point(990, 373);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 61);
+            this.button4.Size = new System.Drawing.Size(49, 68);
             this.button4.TabIndex = 1;
-            this.button4.Text = "UPDATE";
+            this.button4.Text = "ACT";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(936, 772);
+            this.tabPage4.Size = new System.Drawing.Size(1064, 818);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Vender";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -363,7 +363,7 @@ namespace Parcial_02
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 198F));
             this.tableLayoutPanel4.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(930, 768);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1058, 814);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // label3
@@ -372,9 +372,9 @@ namespace Parcial_02
             this.label3.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 257);
+            this.label3.Location = new System.Drawing.Point(3, 283);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(463, 196);
+            this.label3.Size = new System.Drawing.Size(528, 216);
             this.label3.TabIndex = 5;
             this.label3.Text = "Cantidad:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,7 +387,7 @@ namespace Parcial_02
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(463, 257);
+            this.label2.Size = new System.Drawing.Size(528, 283);
             this.label2.TabIndex = 2;
             this.label2.Text = "Producto:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,7 +396,7 @@ namespace Parcial_02
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(521, 112);
+            this.comboBox1.Location = new System.Drawing.Point(618, 125);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(356, 33);
@@ -405,7 +405,7 @@ namespace Parcial_02
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(523, 339);
+            this.textBox1.Location = new System.Drawing.Point(619, 375);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(353, 31);
@@ -415,7 +415,7 @@ namespace Parcial_02
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(591, 530);
+            this.button1.Location = new System.Drawing.Point(688, 576);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 44);
@@ -428,7 +428,7 @@ namespace Parcial_02
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(591, 687);
+            this.button2.Location = new System.Drawing.Point(688, 733);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 44);
@@ -443,9 +443,9 @@ namespace Parcial_02
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.10623F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65439F));
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.89378F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34561F));
             this.tableLayoutPanel1.Controls.Add(this.tabControl1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 1);
@@ -462,14 +462,14 @@ namespace Parcial_02
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1302, 814);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1546, 1006);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 814);
+            this.ClientSize = new System.Drawing.Size(1546, 1006);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

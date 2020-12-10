@@ -51,7 +51,7 @@ namespace Parcial_02
 
                         Form3 ventana1 = new Form3();
                         ventana1.Show();
-                        this.Hide();
+                        
 
                     }
 
