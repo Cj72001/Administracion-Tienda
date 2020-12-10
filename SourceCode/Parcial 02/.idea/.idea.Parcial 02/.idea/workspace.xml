@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba92991-5fc2-4dbe-84df-ff55a647c878" name="Default Changelist" comment="" />
+    <list default="true" id="6ba92991-5fc2-4dbe-84df-ff55a647c878" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Parcial_02 - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Parcial 02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Parcial 02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AddProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form3.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form3.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial 02.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial 02.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial 02.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial 02.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial 02.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial 02.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,10 +87,10 @@
         <option value="$PROJECT_DIR$/UserNonQuery.cs" />
         <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/Form4.cs" />
-        <option value="$PROJECT_DIR$/AddProduct.cs" />
         <option value="$PROJECT_DIR$/DeleteProduct.cs" />
         <option value="$PROJECT_DIR$/Form3.Designer.cs" />
         <option value="$PROJECT_DIR$/Form3.cs" />
+        <option value="$PROJECT_DIR$/AddProduct.cs" />
       </list>
     </option>
   </component>
@@ -151,7 +160,7 @@
       <workItem from="1607462490539" duration="8958000" />
       <workItem from="1607497184717" duration="7100000" />
       <workItem from="1607533677395" duration="5977000" />
-      <workItem from="1607541596524" duration="1122000" />
+      <workItem from="1607541596524" duration="4140000" />
     </task>
     <servers />
   </component>

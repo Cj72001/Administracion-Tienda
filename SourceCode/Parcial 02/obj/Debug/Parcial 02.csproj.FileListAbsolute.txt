@@ -81,3 +81,17 @@ C:\Users\omar flores\Downloads\ORFA_00038619_2EP-master\SourceCode\Parcial 02\ob
 C:\Users\omar flores\Downloads\ORFA_00038619_2EP-master\SourceCode\Parcial 02\obj\Debug\Parcial_02.exe
 C:\Users\omar flores\Downloads\ORFA_00038619_2EP-master\SourceCode\Parcial 02\obj\Debug\Parcial_02.pdb
 C:\Users\omar flores\Downloads\ORFA_00038619_2EP-master\SourceCode\Parcial 02\obj\Debug\Parcial_02.SellingProduct.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial 02.csprojAssemblyReference.cache
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.exe.config
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.AddProduct.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.AddUser.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.DeleteProduct.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.DeleteUser.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.Form1.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.Form3.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.Form4.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.Properties.Resources.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.SellingProduct.resources
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial 02.csproj.GenerateResource.cache
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.exe
+C:\Users\omar flores\Desktop\Administracion-Tienda\SourceCode\Parcial 02\obj\Debug\Parcial_02.pdb

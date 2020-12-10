@@ -10,6 +10,8 @@ namespace Parcial_02
             InitializeComponent();
         }
 
+        public delegate void MyDelegate(ComboBox c);
+        public MyDelegate AccionesCmb;
 
         private void button1_Click(object sender, EventArgs e)
         {

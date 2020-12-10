@@ -60,8 +60,6 @@ namespace Parcial_02
             current = deleteProduct;
             tableLayoutPanel5.SetColumnSpan(current, 4);
         }
-
-        
         
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -76,6 +74,7 @@ namespace Parcial_02
             comboBox1.DisplayMember = "nombre";
             comboBox1.DataSource = ProductNonQuery.getLista();
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
