@@ -146,7 +146,10 @@ namespace Parcial_02
         private void button4_Click(object sender, EventArgs e)
         {
             ProductNonQuery.ProductQuery(dataGridView2);
+            ProductNonQuery.ProductQueryGain(dataGridView1);
         }
+
+        
     }
 
 }

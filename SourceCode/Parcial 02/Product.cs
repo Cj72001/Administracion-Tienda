@@ -2,16 +2,16 @@
 {
     public class Product
     {
-        public int idProducto { get; set;}
+        public decimal idProducto { get; set;}
         public string nombre { get; set;}
-        public int stock_ingresado { get; set;}
-        public int stock_actual { get; set;}
-        public int precio_unidad_compra { get; set;}
-        public int precio_unidad_venta { get; set;}
-        public int cantidad_vendida { get; set;}
-        public int precio_compra_acumulado { get; set;}
-        public int precio_venta_acumulado { get; set;}
-        public int ganancia { get; set;}
+        public decimal stock_ingresado { get; set;}
+        public decimal stock_actual { get; set;}
+        public decimal precio_unidad_compra { get; set;}
+        public decimal precio_unidad_venta { get; set;}
+        public decimal cantidad_vendida { get; set;}
+        public decimal precio_compra_acumulado { get; set;}
+        public decimal precio_venta_acumulado { get; set;}
+        public decimal ganancia { get; set;}
         
 
         public Product()

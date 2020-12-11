@@ -193,7 +193,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(455, 55);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Derechos Reservados © V 1.0 ";
+            this.label5.Text = "Derechos Reservados © V 1.1 ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2

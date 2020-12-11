@@ -18,16 +18,16 @@ namespace Parcial_02
             foreach (DataRow fila in dt.Rows)
             {
                 Product p = new Product();
-                p.idProducto = Convert.ToInt32(fila[0].ToString());
+                p.idProducto = Convert.ToDecimal(fila[0].ToString());
                 p.nombre = fila[1].ToString();
-                p.stock_ingresado = Convert.ToInt32(fila[2].ToString());
-                p.stock_actual = Convert.ToInt32(fila[3].ToString());
-                p.precio_unidad_compra = Convert.ToInt32(fila[4].ToString());
-                p.precio_unidad_venta = Convert.ToInt32(fila[5].ToString());
-                p.cantidad_vendida = Convert.ToInt32(fila[6].ToString());
-                p.precio_compra_acumulado = Convert.ToInt32(fila[7].ToString());
-                p.precio_venta_acumulado = Convert.ToInt32(fila[8].ToString());
-                p.ganancia = Convert.ToInt32(fila[9].ToString());
+                p.stock_ingresado = Convert.ToDecimal(fila[2].ToString());
+                p.stock_actual = Convert.ToDecimal(fila[3].ToString());
+                p.precio_unidad_compra = Convert.ToDecimal(fila[4].ToString());
+                p.precio_unidad_venta = Convert.ToDecimal(fila[5].ToString());
+                p.cantidad_vendida = Convert.ToDecimal(fila[6].ToString());
+                p.precio_compra_acumulado = Convert.ToDecimal(fila[7].ToString());
+                p.precio_venta_acumulado = Convert.ToDecimal(fila[8].ToString());
+                p.ganancia = Convert.ToDecimal(fila[9].ToString());
 
                 lista.Add(p);
             }
@@ -147,6 +147,22 @@ namespace Parcial_02
             try
             {
                 var dt = ConnectionDB.ExecuteQuery($"SELECT * FROM GANANCIA");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+        
+        //Mostrando Ganancia Total:
+        public static void ProductQueryGain(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT SUM(ganancia)FROM GANANCIA;");
             
                 dataGridView1.DataSource = dt;
             }
