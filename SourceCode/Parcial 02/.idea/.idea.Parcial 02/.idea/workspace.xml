@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba92991-5fc2-4dbe-84df-ff55a647c878" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Parcial 02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Parcial 02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddProduct.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AddProduct.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form3.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form3.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Parcial_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Parcial_02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Parcial_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Parcial_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial 02.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial 02.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial_02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Parcial_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Parcial_02.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +165,16 @@
       <workItem from="1607561585559" duration="182000" />
       <workItem from="1607562676791" duration="498000" />
       <workItem from="1607666828326" duration="4620000" />
+      <workItem from="1607709979818" duration="1573000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix">
+      <created>1607710114888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607710114888</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,30 +182,45 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2352" y="197" key="#Notifications" timestamp="1607497291385">
       <screen x="1920" y="34" width="1680" height="1010" />
     </state>
     <state x="2352" y="197" key="#Notifications/0.0.1280.680/1920.34.1680.1010@1920.34.1680.1010" timestamp="1607497291385" />
-    <state width="1237" height="47" key="GridCell.Tab.0.bottom" timestamp="1607709774659">
+    <state width="1237" height="47" key="GridCell.Tab.0.bottom" timestamp="1607711502041">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="47" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607709774659" />
+    <state width="1237" height="47" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607711502041" />
     <state width="1637" height="44" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.34.1680.1010@1920.34.1680.1010" timestamp="1607563175908" />
-    <state width="1237" height="47" key="GridCell.Tab.0.center" timestamp="1607709774658">
+    <state width="1237" height="47" key="GridCell.Tab.0.center" timestamp="1607711502041">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="47" key="GridCell.Tab.0.center/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607709774658" />
+    <state width="1237" height="47" key="GridCell.Tab.0.center/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607711502041" />
     <state width="1637" height="44" key="GridCell.Tab.0.center/0.0.1280.680/1920.34.1680.1010@1920.34.1680.1010" timestamp="1607563175907" />
-    <state width="1237" height="47" key="GridCell.Tab.0.left" timestamp="1607709774658">
+    <state width="1237" height="47" key="GridCell.Tab.0.left" timestamp="1607711502041">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="47" key="GridCell.Tab.0.left/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607709774658" />
+    <state width="1237" height="47" key="GridCell.Tab.0.left/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607711502041" />
     <state width="1637" height="44" key="GridCell.Tab.0.left/0.0.1280.680/1920.34.1680.1010@1920.34.1680.1010" timestamp="1607563175905" />
-    <state width="1237" height="47" key="GridCell.Tab.0.right" timestamp="1607709774659">
+    <state width="1237" height="47" key="GridCell.Tab.0.right" timestamp="1607711502041">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="47" key="GridCell.Tab.0.right/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607709774659" />
+    <state width="1237" height="47" key="GridCell.Tab.0.right/0.0.1280.680/1920.34.1680.1010@0.0.1280.680" timestamp="1607711502041" />
     <state width="1637" height="44" key="GridCell.Tab.0.right/0.0.1280.680/1920.34.1680.1010@1920.34.1680.1010" timestamp="1607563175908" />
     <state width="1237" height="73" key="GridCell.Tab.1.bottom" timestamp="1607709774639">
       <screen x="0" y="0" width="1280" height="680" />

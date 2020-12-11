@@ -88,13 +88,23 @@ namespace Parcial_02
 
                 }
             });
-
-            if (p.stock_actual != 0)
+            
+            if(p.stock_actual == 0 )
+            {
+                MessageBox.Show("Ya no hay producto disponible");
+            }
+            
+            else if (Convert.ToDecimal(textBox1.Text) > p.stock_actual)
+            {
+                MessageBox.Show("Solamente hay: "+p.stock_actual+" de "+p.nombre+", no se pueden vender "+textBox1.Text);
+            }
+            
+            else if (p.stock_actual != 0)
             {
                 try
                 {
                     ConnectionDB.ExecuteNonQuery($"UPDATE GANANCIA SET cantidad_vendida = (cantidad_vendida)+'{textBox1.Text}' WHERE idProducto = '{comboBox1.SelectedValue}';");
-                    MessageBox.Show("Se ha VENDIDO el propducto");
+                    MessageBox.Show("Se vendio "+textBox1.Text+" de "+p.nombre);
             
                 }
                 catch (Exception exception)
@@ -130,12 +140,6 @@ namespace Parcial_02
                 }
             }
 
-            else
-            {
-                MessageBox.Show("Ya no hay producto disponible");
-            }
-
-                
         }
         
         private void button2_Click(object sender, EventArgs e)
