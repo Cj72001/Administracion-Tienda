@@ -43,7 +43,7 @@ namespace Parcial_02
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(547, 417);
+            this.textBox3.Location = new System.Drawing.Point(577, 417);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(301, 31);
@@ -52,7 +52,7 @@ namespace Parcial_02
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(547, 139);
+            this.textBox2.Location = new System.Drawing.Point(577, 139);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(301, 31);
@@ -67,9 +67,9 @@ namespace Parcial_02
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(406, 283);
+            this.label2.Size = new System.Drawing.Size(467, 283);
             this.label2.TabIndex = 3;
-            this.label2.Text = "User Name:";
+            this.label2.Text = "Nombre de usuario:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -80,7 +80,7 @@ namespace Parcial_02
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 296);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(406, 274);
+            this.label3.Size = new System.Drawing.Size(467, 274);
             this.label3.TabIndex = 4;
             this.label3.Text = "Contrasena:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,9 +104,9 @@ namespace Parcial_02
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.93955F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.11801F));
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.06045F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.88199F));
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);

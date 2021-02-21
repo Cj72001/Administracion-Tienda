@@ -68,14 +68,21 @@ namespace Parcial_02
         
         private void cmbProduct()
         {
-            // Actualizar ComboBox
+            // Actualizar ComboBox 1
             comboBox1.DataSource = null;
             comboBox1.ValueMember = "idProducto";
             comboBox1.DisplayMember = "nombre";
             comboBox1.DataSource = ProductNonQuery.getLista();
+            
+            // Actualizar ComboBox 2
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idProducto";
+            comboBox2.DisplayMember = "nombre";
+            comboBox2.DataSource = ProductNonQuery.getLista();
         }
         
 
+        //Sell Button (Sell Tab) 
         private void button1_Click(object sender, EventArgs e)
         {
             Product p = new Product();
@@ -91,12 +98,13 @@ namespace Parcial_02
             
             if(p.stock_actual == 0 )
             {
-                MessageBox.Show("Ya no hay producto disponible");
+                MessageBox.Show("Ya no hay " + p.nombre + " disponible", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             
             else if (Convert.ToDecimal(textBox1.Text) > p.stock_actual)
             {
-                MessageBox.Show("Solamente hay: "+p.stock_actual+" de "+p.nombre+", no se pueden vender "+textBox1.Text);
+                MessageBox.Show("Solamente hay: "+p.stock_actual+" de "+p.nombre+", no se pueden vender "+textBox1.Text, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             else if (p.stock_actual != 0)
@@ -105,16 +113,35 @@ namespace Parcial_02
                 {
                     ConnectionDB.ExecuteNonQuery($"UPDATE GANANCIA SET cantidad_vendida = (cantidad_vendida)+'{textBox1.Text}' WHERE idProducto = '{comboBox1.SelectedValue}';");
                     MessageBox.Show("Se vendio "+textBox1.Text+" de "+p.nombre);
+                    
+                    
             
                 }
                 catch (Exception exception)
                 {
                     MessageBox.Show("Ha ocurrido un error actualizando");
                 }
+
+                //Agregando a t3
+                try
+                {
+
+                    decimal ganancia;
+                    ganancia = (Convert.ToDecimal(textBox1.Text)*p.precio_unidad_venta)- (Convert.ToDecimal(textBox1.Text)*p.precio_unidad_compra);
+                    ConnectionDB.ExecuteNonQuery($"INSERT INTO GANANCIADIAARTICULO (nombre, cantidad_vendida, ganancia) VALUES('{p.nombre}', '{textBox1.Text}', '{ganancia}');");
+                    
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error actualizando T2 ");
+                }
+                
             
                 try
                 {
+                    
                     ConnectionDB.ExecuteNonQuery($"UPDATE GANANCIA SET stock_actual = stock_actual-{textBox1.Text} WHERE idProducto = {comboBox1.SelectedValue};");
+                    
                 }
                 catch (Exception exception)
                 {
@@ -147,13 +174,125 @@ namespace Parcial_02
             textBox1.Text = "";
         }
 
-        private void button4_Click(object sender, EventArgs e)
+
+        //Vendido Tab
+        private void button8_Click(object sender, EventArgs e)
         {
-            ProductNonQuery.ProductQuery(dataGridView2);
+            //Updating Producto Vendido
+            ProductNonQuery.ProductQueryStock0(dataGridView3);
+            
+            //Updating ganancias
             ProductNonQuery.ProductQueryGain(dataGridView1);
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //Updating Producto Vendido
+            ProductNonQuery.ProductQueryStock0(dataGridView5);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            //Updating Product Table
+            ProductNonQuery.ProductQueryAll(dataGridView5);
+        }
+
+        //Update Product btn
+        private void button10_Click(object sender, EventArgs e)
+        {
+            
+            ProductNonQuery.UpdateProductStock(Convert.ToInt32(comboBox1.SelectedValue), Convert.ToInt32(textBox2.Text));
+        }
+
+        //Actualizar ventas del dia btn
+        private void button12_Click(object sender, EventArgs e)
+        {
+            //Updating Ventas del dia table
+            ProductNonQuery.ProductQuerySecondT(dataGridView2);
+            
+            //Ganancias
+            //Updating ganancias
+            ProductNonQuery.ProductQueryGainT2(dataGridView6);
+        }
         
+        //Cerrar caja btn
+        private void button13_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        //Actualizar Historial de ventas 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Updating Ventas historial
+            ProductNonQuery.ProductQueryT3(dataGridView4);
+        }
+
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Esta seguro de CERRAR DIA ?", "Corte de caja", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                //Insertando ganancias en T3
+                try
+                {
+                    ConnectionDB.ExecuteNonQuery($"INSERT INTO GANANCIADIA (select current_date, SUM(ganancia)FROM GANANCIADIAARTICULO);");
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error actualizando suma de ganancias");
+                }
+            
+                //Vaciando datos de T2
+                try
+                {
+                    ConnectionDB.ExecuteNonQuery($"truncate table GANANCIADIAARTICULO;");
+                    MessageBox.Show("Se ha cortado caja!!");
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error BORRANDO  T2");
+                }
+            }
+
+        }
+
+//Limpiar ganancias
+        private void button14_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Esta seguro de LIMPIAR HISTORIAL ?", "Historial de ventas", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                try
+                {
+                    ConnectionDB.ExecuteNonQuery($"TRUNCATE TABLE GANANCIADIA;");
+                    MessageBox.Show("Se ha limpiado el historial!!");
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error BORRANDO HISOTRIAL T3");
+                }
+            }
+            
+            
+        }
+
+        //lIMPIAR GANANCIAS BTN
+        private void button15_Click(object sender, EventArgs e)
+        {
+            //Insertando ganancias en T3
+            try
+            {
+                ConnectionDB.ExecuteNonQuery($"UPDATE GANANCIA SET ganancia = 0 WHERE idProducto = {Convert.ToInt32(comboBox2.SelectedValue)};");
+                MessageBox.Show("Se han limpiado las ganancias del producto");
+            }
+            
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un error LIMPIANDO GANANCIAS");
+            }
+            
+        }
     }
 
 }

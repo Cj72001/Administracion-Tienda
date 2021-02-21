@@ -121,6 +121,21 @@ namespace Parcial_02
             }
             
         }
+         
+         //Actualizando Producto (stock)
+         public static void UpdateProductStock(int id, int cantidad)
+         {
+             try
+             {
+                 ConnectionDB.ExecuteNonQuery($"UPDATE GANANCIA SET stock_ingresado =  stock_ingresado + '{cantidad}', stock_actual = stock_actual + '{cantidad}' WHERE idproducto = '{id}';");
+                 MessageBox.Show("Se ha actualizado el stock", "Stock Actualizado");
+             }
+             catch (Exception exception)
+             {
+                 MessageBox.Show("Ha ocurrido un error actualizando");
+             }
+
+         }
         
 
          //Eliminando Propducto
@@ -141,8 +156,8 @@ namespace Parcial_02
             }
         }
         
-        //Mostrando Producto:
-        public static void ProductQuery(DataGridView dataGridView1)
+        //Mostrando Todo inventario
+        public static void ProductQueryAll(DataGridView dataGridView1)
         {
             try
             {
@@ -157,12 +172,92 @@ namespace Parcial_02
             }
         }
         
-        //Mostrando Ganancia Total:
+        //Mostrando Todo de la otra tabla
+        public static void ProductQuerySecondT(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT nombre, ganancia FROM GANANCIADIAARTICULO");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+        
+        //Mostrando Producto (donde stock actual no sea 0):
+        public static void ProductQuery(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT * FROM GANANCIA WHERE stock_actual != 0");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+
+        //Mostrando Producto (donde stock actual sea 0):
+        public static void ProductQueryStock0(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT * FROM GANANCIA WHERE stock_actual = 0");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+        
+        //Mostrando Ganancia Total (tabla ganancias):
         public static void ProductQueryGain(DataGridView dataGridView1)
         {
             try
             {
                 var dt = ConnectionDB.ExecuteQuery($"SELECT SUM(ganancia)FROM GANANCIA;");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+        
+        //Mostrando Ganancia Total (tabla2):
+        public static void ProductQueryT3(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT * FROM GANANCIADIA;");
+            
+                dataGridView1.DataSource = dt;
+            }
+                        
+            catch (Exception exception)
+            {
+                MessageBox.Show("Ha ocurrido un problema");
+            }
+        }
+        
+        //Mostrando historial (tabla3):
+        public static void ProductQueryGainT2(DataGridView dataGridView1)
+        {
+            try
+            {
+                var dt = ConnectionDB.ExecuteQuery($"SELECT SUM(ganancia)FROM GANANCIADIAARTICULO;");
             
                 dataGridView1.DataSource = dt;
             }

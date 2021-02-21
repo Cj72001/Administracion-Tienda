@@ -117,7 +117,7 @@ namespace Parcial_02
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.659091F));
             this.tableLayoutPanel1.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(756, 600);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1115, 755);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // dataGridView2
@@ -125,18 +125,18 @@ namespace Parcial_02
             this.dataGridView2.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(192, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(283, 2);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(561, 480);
+            this.dataGridView2.Size = new System.Drawing.Size(829, 620);
             this.dataGridView2.TabIndex = 2;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(3, 215);
+            this.button2.Location = new System.Drawing.Point(49, 285);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(182, 54);
@@ -149,7 +149,7 @@ namespace Parcial_02
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(355, 540);
+            this.button1.Location = new System.Drawing.Point(580, 695);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(234, 54);
@@ -164,9 +164,9 @@ namespace Parcial_02
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 484);
+            this.label1.Location = new System.Drawing.Point(3, 624);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 51);
+            this.label1.Size = new System.Drawing.Size(274, 66);
             this.label1.TabIndex = 3;
             this.label1.Text = "Producto:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,7 +174,7 @@ namespace Parcial_02
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(298, 494);
+            this.textBox1.Location = new System.Drawing.Point(523, 641);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(348, 31);
@@ -187,7 +187,7 @@ namespace Parcial_02
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DeleteProduct";
-            this.Size = new System.Drawing.Size(756, 600);
+            this.Size = new System.Drawing.Size(1115, 755);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

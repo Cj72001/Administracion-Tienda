@@ -3,12 +3,12 @@ CREATE TABLE GANANCIA(
 	nombre VARCHAR(100),
 	stock_ingresado INT,
 	stock_actual INT,
-	precio_unidad_compra INT,
-	precio_unidad_venta INT,
+	precio_unidad_compra NUMERIC,
+	precio_unidad_venta NUMERIC,
 	cantidad_vendida INT,
-	precio_compra_acumulado INT,
-	precio_venta_acumulado INT,
-	ganancia INT
+	precio_compra_acumulado NUMERIC,
+	precio_venta_acumulado NUMERIC,
+	ganancia NUMERIC
 );
 
 CREATE TABLE appuser(
@@ -17,6 +17,41 @@ CREATE TABLE appuser(
 	password_ VARCHAR(100)
 );
 
+CREATE TABLE GANANCIADIAARTICULO(
+	idProducto SERIAL PRIMARY KEY,
+	nombre VARCHAR(100),
+	cantidad_vendida NUMERIC,
+	ganancia NUMERIC
+);
+
+CREATE TABLE GANANCIADIA(
+	fecha VARCHAR(20),
+	ganancia NUMERIC
+);
+
+----------------------------------------------------------------------
+--Insertando usuario Prueba:
 INSERT INTO appuser (userName, password_)
 VALUES ('Victoria', '123');
 select * from appuser;
+
+-----------------------------------------------------------------------
+CREATE TABLE GANANCIADIAARTICULO(
+	idProducto SERIAL PRIMARY KEY,
+	nombre VARCHAR(100),
+	cantidad_vendida NUMERIC,
+	ganancia NUMERIC
+);
+
+CREATE TABLE GANANCIADIA(
+	fecha VARCHAR(20),
+	ganancia NUMERIC
+);
+
+INSERT INTO GANANCIADIA (select current_date, SUM(ganancia)FROM GANANCIADIAARTICULO)
+SELECT * FROM GANANCIADIA;
+select current_date
+
+TRUNCATE TABLE GANANCIADIA;
+
+SELECT nombre, ganancia FROM GANANCIADIAARTICULO WHERE nombre= 'chocos';
